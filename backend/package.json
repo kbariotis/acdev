@@ -1,0 +1,83 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Api endpoint",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mysql2": "^1.5.3",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "sequelize": "^4.37.7",
+    "throw.js": "^3.0.1",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^1.7.2"
+  },
+  "scripts": {
+    "dev": "DEBUG=swagger:* supervisor src/server.js",
+    "lint": "eslint src/**/*"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "ecmaFeatures": {
+      "generators": true
+    },
+    "rules": {
+      "camelcase": 0,
+      "no-undef": 0,
+      "no-shadow": 0,
+      "no-use-before-define": 0,
+      "strict": 0,
+      "no-inner-declarations": 0,
+      "no-unused-vars": 0,
+      "new-cap": 0,
+      "no-underscore-dangle": 0,
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "brace-style": [
+        1,
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "comma-style": [
+        2,
+        "last"
+      ],
+      "eol-last": 2,
+      "no-lonely-if": 2,
+      "quotes": [
+        2,
+        "double"
+      ],
+      "space-after-keywords": 2,
+      "space-before-blocks": 1,
+      "space-before-function-paren": [
+        2,
+        "never"
+      ],
+      "space-in-parens": [
+        2,
+        "never"
+      ],
+      "spaced-comment": 2
+    },
+    "globals": {
+      "super": true
+    }
+  }
+}
